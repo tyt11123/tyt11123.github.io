@@ -32,4 +32,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Xccelerate
 * W3CSchool
+* Masonry
 * Google
