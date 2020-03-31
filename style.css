@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Own code below */
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+body {
+  /* The image used */
+  background-image: url("Background.JPG");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* font */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Turn off parallax scrolling for tablets and phones. */
+@media only screen and (max-device-width: 1024px) {
+	body {
+		line-height: 1;
+		background-color: black;
+		background-image: none;
+		background-attachment: scroll;
+	}
+}
+
+h1, h3, p {
+	text-align: start;
+	font-size: 30px;
+}
+
+h1 {
+	color: darkslategray;
+}
+
+h3 {
+	color: white;
+	margin-bottom: 2vw;
+}
+
+p {
+	color: whitesmoke;
+}
+
+strong {
+	color: red;
+	font-size: 40px;
+}
+
+.box {
+	background-color: lightblue;
+	width: 100%;
+	position: relative;
+}
+
+header {
+	height: 100px;
+}
+
+#headerdiv, #headernav {
+    background-color: lightblue;
+    height: 100px;
+}
+
+#headerdiv {
+    width: 50%;
+	float: left;
+	padding: 30px 0 10px 5vw;
+}
+
+#headernav {
+    width: 50%;
+	float: right;
+	padding: 40px 0 10px 5vw;
+}
+
+#headernav a {
+    color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+footer {
+	height: 6vh;
+}
+
+#footerLeft {
+	display: inline-block;
+	padding: 3vh 1vw 3vh 5vw;
+}
+
+section {
+	width: 61%;
+	float: left;
+	padding: 5vh 2vw;
+}
+
+aside {
+	width: 35%;
+	float: right;
+}
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	margin: 10px;
+	clear: both;
+}
+
+.gallery {
+	margin: 10px;
+	border: 1px solid lightgray;
+	float: left;
+	width: 198px;
+}
+  
+.gallery:hover {
+	border: 1px solid darkgray;
+}
+
+.gallery img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+}
+
+.desc {
+	padding: 15px;
+	text-align: center;
+	color: lightgray;
+	clear: both;
+}
+
+.button {
+	padding: 9px 15px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: darkslategray;
+	background-color: lightskyblue;
+	border: none;
+	border-radius: 9px;
+	box-shadow: 0 4px #999;
+}
+  
+.button:hover {background-color: lightsteelblue}
+  
+.button:active {
+	background-color: lightsteelblue;
+	box-shadow: 0 2px #666;
+	transform: translateY(4px);
+}
