@@ -221,3 +221,5 @@ aside {
 	box-shadow: 0 2px #666;
 	transform: translateY(4px);
 }
+
+.grid-item { width: 60px; }
