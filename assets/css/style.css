@@ -55,20 +55,21 @@ table {
 }
 
 body {
-  /* The image used */
-  background-image: url("Background.JPG");
+	/* The image used */
+	background-color: #222;
+	background-blend-mode: overlay;
+	 
+	/* Full height */
+	height: 100%;
+	 
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* font */
-  font-family: Arial, Helvetica, sans-serif;
+	/* font */
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Turn off parallax scrolling for tablets and phones. */
