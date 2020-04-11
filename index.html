@@ -3,79 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheung Kam Yiu</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ce3b2d5aaf.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Cheung Kam Yiu - About Me</title>
 </head>
-<body style="background-image: url('assets/img/Background.JPG')">
-    <header>
-        <div class="box">
-            <div id="headerdiv">
-                <h1><strong>Cheung Kam Yiu</strong></h1>
-            </div>
-            <nav id="headernav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="album.html">Album</a></li>
-                </ul>
-            </nav>
+<body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark sticky-top">
+        <a data-scroll class="navbar-brand" href="#">
+            <i width="30" height="30" class="fas fa-meteor d-inline-block "></i>
+            Cheung Kam Yiu
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#hobby">Hobby</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#album">Album</a>
+                </li>
+                <li class="nav-item">
+                    <a data-scroll class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </header>
-    <div class="group">
-        <section>
-            <h3>What I did before</h3>
-            <p>
-                I was a IT technical assistant in a logistics comany before.
-                Responsible for maintaining everything related from PC to network,
-                colleagues always refer me as the IT-guy.
-                Outside office hour, I am keen on dwelling through the city with Pokemon Go.
-            </p>
-        </section>
-        <aside>
+    </nav>
+    <div class="jumbotron text-center">
+        <h1>Cheung Kam Yiu</h1>
+        <p>Personal Portfolio</p>
+        <hr>
+        <a data-scroll href="#about">
+            <button type="button" class="btn btn-success btn-lg text-uppercase">About Me</button>
+        </a>
+    </div>
+    <div class="container-fluid bg-dark no-gutters text-center" id="about">
+        <div class="row">
+            <div class="col-sm-7">
+                <h2>What I did before</h2>
+                <h4>IT technical assistant</h4>
+                <p>Responsible for maintaining everything related from PC to network,
+                    colleagues always refer me as the IT-guy.</p>
+                <a data-scroll href="#album">
+                    <button class="btn btn-success btn-lg">Album</button>
+                </a>
+            </div>
+            <div class="col-sm-5">
+                <div class="gallery">
+                    <a target="_blank" href="assets/img/IMG_2476.JPG">
+                      <img src="assets/img/IMG_2476.JPG" alt="Reflecting myself">
+                    </a>
+                    <div class="desc">Reflecting myself</div>
+                </div>
+                <div class="gallery">
+                    <a target="_blank" href="assets/img/IMG_1908.JPG">
+                      <img src="assets/img/IMG_1908.JPG" alt="My beloved company">
+                    </a>
+                    <div class="desc">My beloved company</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary text-center" id="hobby">
+        <h2>Hobby</h2>
+        <hr>
+        <h4>Pokémon GO...</h4>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <i class="fas fa-paw fa-5x"></i>
+                <h4>Pika</h4>
+                <p>Imagine it's Pikachu's paw..</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <i class="fas fa-dove fa-5x"></i>
+                <h4>Pidgey</h4>
+                <p>Imagine if it's Pidgey..</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <i class="fas fa-horse fa-5x"></i>
+                <h4>Ponyta</h4>
+                <p>Imagine it's Ponyta..</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <i class="fas fa-dragon fa-5x"></i>
+                <h4>Dratini</h4>
+                <p>Imagine if it's Dratini..</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid no-gutters bg-dark text-center" id="portfolio">
+        <div class="row no-gutters">
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/IMG_2194.JPG" alt="Shiny" class="pflimage">
+                <div class="pflhover">
+                    <h4>Shiny</h4>
+                    <p>Pokemon at my home</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/IMG_2079.JPG" alt="Eat" class="pflimage">
+                <div class="pflhover">
+                    <h4>Me</h4>
+                    <p>Sitting in a restaurant</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/IMG_1908.JPG" alt="Bridge" class="pflimage">
+                <div class="pflhover">
+                    <h4>Bridge</h4>
+                    <p>Outside my previous company</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 pfl">
+                <img src="assets/img/IMG_3206.JPG" alt="Cargo" class="pflimage">
+                <div class="pflhover">
+                    <h4>Cargo</h4>
+                    <p>Outside my previous company</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-9">
+                <h2>Why I join the bootcamp</h2>
+                <p>Eagering to get better paid while still looking like an IT-guy,
+                    I give up my job and join the coding bootcamp.</p>
+            </div>
+            <div class="col-sm-3">
+                <a target="_blank" href="https://xccelerate.co/">
+                    <button class="btn btn-success btn-lg animated infinite tada delay-2s">Xccelerate</button>
+                </a>    
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid no-gutters bg-secondary text-center" id="album">
+        <div class="row">
+            <div class="col">
+                <h2>What I expect from the Bootcamp</h2>
+                <p>Just hope that this coding bootcamp can give me practices on coding as well as
+                    dealing with challenges from system owners.</p>
+                <hr>
+            </div>
+        </div>
+        <div class="grid">
             <div class="gallery">
                 <a target="_blank" href="assets/img/IMG_2476.JPG">
-                  <img src="assets/img/IMG_2476.JPG" alt="Reflecting myself">
+                  <img src="assets/thumb/sIMG_2476.JPG" alt="Reflecting myself">
                 </a>
                 <div class="desc">Reflecting myself</div>
             </div>
             <div class="gallery">
                 <a target="_blank" href="assets/img/IMG_1908.JPG">
-                  <img src="assets/img/IMG_1908.JPG" alt="My beloved company">
+                  <img src="assets/thumb/sIMG_1908.JPG" alt="My beloved company">
                 </a>
                 <div class="desc">My beloved company</div>
             </div>
-        </aside>
-    </div>
-    <div class="group">
-        <section>
-            <h3>Why I join the bootcamp</h3>
-            <p>
-                Eagering to get better paid while still looking like an IT-guy,
-                I give up my job and join the coding bootcamp. Just hope that
-                this coding bootcamp can give me practices on coding as well as
-                dealing with challenges from system owners.
-            </p>
-        </section>
-        <aside>
             <div class="gallery">
                 <a target="_blank" href="assets/img/IMG_2194.JPG">
-                  <img src="assets/img/IMG_2194.JPG" alt="Pokemon at my home">
+                  <img src="assets/thumb/sIMG_2194.JPG" alt="Pokemon at my home">
                 </a>
                 <div class="desc">Pokemon at my home</div>
             </div>
             <div class="gallery">
                 <a target="_blank" href="assets/img/IMG_2079.JPG">
-                  <img src="assets/img/IMG_2079.JPG" alt="Sitting in a restaurant">
+                  <img src="assets/thumb/sIMG_2079.JPG" alt="Sitting in a restaurant">
                 </a>
                 <div class="desc">Sitting in a restaurant</div>
             </div>
-        </aside>
-    </div>
-    <footer>
-        <div class="box">
-            <h1 id="footerLeft">© Cheung Kam Yiu</h1><!--
-            --><a href="mailto:tyt11123@yahoo.com.hk"><button class="button">Email Me</button></a>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_1694.JPG">
+                  <img src="assets/thumb/sIMG_1694.JPG" alt="Company's Chek Lap Kok Office">
+                </a>
+                <div class="desc">Company's Chek Lap Kok Office</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_1695.JPG">
+                    <img src="assets/thumb/sIMG_1695.JPG" alt="Company's Chek Lap Kok Office(2)">
+                </a>
+                <div class="desc">Company's Chek Lap Kok Office (2)</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_1696.JPG">
+                  <img src="assets/thumb/sIMG_1696.JPG" alt="Company's Chek Lap Kok Office(3)">
+                </a>
+                <div class="desc">Company's Chek Lap Kok Office(3)</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_1837.JPG">
+                  <img src="assets/thumb/sIMG_1837.JPG" alt="Home Community destroyed in typhoon">
+                </a>
+                <div class="desc">Home Community destroyed in typhoon</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_2195.JPG">
+                    <img src="assets/thumb/sIMG_2195.JPG" alt="Another Pokemon">
+                </a>
+                <div class="desc">Another Pokemon</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_2382.JPG">
+                  <img src="assets/thumb/sIMG_2382.JPG" alt="Detective Pikachu">
+                </a>
+                <div class="desc">Detective Pikachu</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_E2427.JPG">
+                  <img src="assets/thumb/sIMG_E2427.JPG" alt="Sleeping Snorlax">
+                </a>
+                <div class="desc">Sleeping Snorlax</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_3205.JPG">
+                    <img src="assets/thumb/sIMG_3205.JPG" alt="Panorama from company">
+                </a>
+                <div class="desc">Panorama from company</div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="assets/img/IMG_3206.JPG">
+                  <img src="assets/thumb/sIMG_3206.JPG" alt="Another shot from company">
+                </a>
+                <div class="desc">Another shot from company</div>
+            </div>
         </div>
-    </footer>
+    </div>
+    <div class="container-fluid bg-dark text-center" id="contact">
+        <div class="row no-gutters">
+            <div class="col">
+                <h2>Let's Get In Touch!</h2>
+                <hr>
+                <p>Outside office hour, I am keen on dwelling with Pokemon Go.</p>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-sm-3 mx-auto">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-mobile-alt fa-stack-1x"></i>
+                    <i class="far fa-circle fa-stack-2x"></i>
+                </span>
+                <p>+852 9475-0922</p>
+            </div>
+            <div class="col-sm-3 mx-auto">
+                <span class="fa-stack fa-3x">
+                    <i class="fas fa-mail-bulk fa-stack-1x"></i>
+                    <i class="far fa-circle fa-stack-2x"></i>
+                </span>
+                <a href="mailto:tyt11123@yahoo.com.hk?subject=Testing">
+                    <p>tyt11123@yahoo.com.hk</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Smooth Scroll -->
+    <script src="assets/js/smooth-scroll.polyfills.min.js"></script>
+    <!-- Imagesloaded + Masonry -->
+    <script src="assets/js/imagesloaded.pkgd.js"></script>
+    <script src="assets/js/masonry.pkgd.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
