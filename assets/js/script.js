@@ -16,19 +16,14 @@ window.addEventListener('scroll', function(e) {
 });
 
 var element = document.querySelector('.grid');
-// var imgLoad = imagesLoaded(element);
-// function onAlways(instance) {
-//   var msnry = new Masonry(element, {
-//     // options
-//     itemSelector: '.gallery',
-//     columnWidth: 60
-//   });
-// }
-// // bind with .on()
-// imgLoad.on('always', onAlways);
+var imgLoad = imagesLoaded(element);
+function onAlways(instance) {
+  var msnry = new Masonry(element, {
+    // options
+    itemSelector: '.gallery',
+    columnWidth: 60
+  });
+}
+// bind with .on()
+imgLoad.on('always', onAlways);
 
-var msnry = new Masonry(element, {
-  // options
-  itemSelector: '.gallery',
-  columnWidth: 60
-});
